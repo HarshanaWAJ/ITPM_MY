@@ -9,4 +9,7 @@
     <string name="staff_id">Staff ID</string>
     <string name="feedback">Feedback</string>
     <string name="feedback_list">Feedback List</string>
+    <string name="back">Back</string>
+    <string name="service">Service:</string>
+    <string name="on_time">On Time:</string>
 </resources>

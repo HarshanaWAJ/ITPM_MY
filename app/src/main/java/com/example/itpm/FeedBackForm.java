@@ -2,6 +2,7 @@ package com.example.itpm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,6 +29,7 @@ public class FeedBackForm extends AppCompatActivity {
     Spinner onTimeRateSpinner;
 
     Button submitBtn;
+    Button listBtn;
 
     //Database Ref
     DatabaseReference  rateDatabaseRef;
@@ -123,6 +125,8 @@ public class FeedBackForm extends AppCompatActivity {
         staffId = findViewById(R.id.staffIdEt);
         feedbackMessage = findViewById(R.id.feedbackEt);
         submitBtn = findViewById(R.id.feedbackSubmitBtn);
+        listBtn = findViewById(R.id.feedbackListBtn);
+
         //Submit Method
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,11 +134,18 @@ public class FeedBackForm extends AppCompatActivity {
                 insertRateData();
             }
         });
-
         rateDatabaseRef = FirebaseDatabase.getInstance().getReference().child("Staff_Rates");
+
+        listBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FeedBackForm.this, FeedbackList.class));
+            }
+        });
+
     }
 
-    private void insertRateData() {
+    public void insertRateData() {
         String etStaffId = staffId.getText().toString();
         String etFeedbackMessage = feedbackMessage.getText().toString();
         String onTimeRate = onTimeRateSpinner.getSelectedItem().toString();

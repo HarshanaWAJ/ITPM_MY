@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="124dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="176dp"
+            android:gravity="center|start"
+            android:text="@string/on_time"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="124dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="252dp"
+            android:gravity="center|start"
+            android:text="@string/service"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TV3"
+            android:layout_width="124dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center|start"
+            android:text="@string/staff_id"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stfIDEt"
+            android:layout_width="211dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center|start"
+            android:text="@string/staff_id"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/onTimeScoreEt"
+            android:layout_width="211dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="176dp"
+            android:gravity="center|start"
+            android:text="@string/staff_id"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/serviceScoreEt"
+            android:layout_width="211dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="252dp"
+            android:gravity="center|start"
+            android:text="@string/staff_id"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="215dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="336dp"
+            android:text="Delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
