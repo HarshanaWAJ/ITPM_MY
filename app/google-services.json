@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "416871494493",
+    "firebase_url": "https://itpm-project-a0611-default-rtdb.firebaseio.com",
+    "project_id": "itpm-project-a0611",
+    "storage_bucket": "itpm-project-a0611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416871494493:android:4c686d426d264fc3746eb4",
+        "android_client_info": {
+          "package_name": "com.example.itpm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSB6HcYtQie8rd7Wx6RBmXqtW8wjZm1yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ITPM</string>
+    <string name="feed_back_form_header">Feedback Form</string>
+    <string name="rate_score">Low = 0\nHigh =5</string>
+    <string name="give_your_feedback">Give your Feedback</string>
+    <string name="on_time_score">On Time Score</string>
+    <string name="service_score">Service Score</string>
+    <string name="submit">SUBMIT</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_list">Feedback List</string>
+</resources>
