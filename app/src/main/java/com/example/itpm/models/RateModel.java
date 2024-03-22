@@ -1,14 +1,12 @@
 package com.example.itpm.models;
 
-import java.util.Date;
-
 public class RateModel {
     String staffId;
     String feedbackMessage;
     String onTimeRate;
     String serviceRate;
-    int onTimeScore;
-    int serviceScore;
+    String onTimeScore;
+    String serviceScore;
 
 
     public RateModel(String staffId, String feedbackMessage, String onTimeRate, String serviceRate, int onTimeScore, int serviceScore) {
@@ -16,8 +14,8 @@ public class RateModel {
         this.feedbackMessage = feedbackMessage;
         this.onTimeRate = onTimeRate;
         this.serviceRate = serviceRate;
-        this.onTimeScore = onTimeScore;
-        this.serviceScore = serviceScore;
+        this.onTimeScore = String.valueOf(onTimeScore);
+        this.serviceScore = String.valueOf(serviceScore);
     }
 
     public String getStaffId() {
@@ -36,11 +34,11 @@ public class RateModel {
         return serviceRate;
     }
 
-    public int getOnTimeScore() {
+    public String getOnTimeScore() {
         return onTimeScore;
     }
 
-    public int getServiceScore() {
+    public String getServiceScore() {
         return serviceScore;
     }
 
@@ -62,11 +60,12 @@ public class RateModel {
     }
 
     public void setOnTimeScore(int onTimeScore) {
-        this.onTimeScore = onTimeScore;
+
+        this.onTimeScore = String.valueOf(onTimeScore);
     }
 
     public void setServiceScore(int serviceScore) {
-        this.serviceScore = serviceScore;
+        this.serviceScore = String.valueOf(serviceScore);
     }
 
 }

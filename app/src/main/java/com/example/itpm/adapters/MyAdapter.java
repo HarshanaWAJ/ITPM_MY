@@ -15,6 +15,7 @@ import com.example.itpm.models.RateModel;
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+
     Context context;
     ArrayList<RateModel> list;
 
@@ -25,17 +26,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @NonNull
     @Override
-    public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(context).inflate(R.layout.rateentry, parent, false);
         return new MyViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
-        RateModel rate = list.get(position);
-        holder.staffId.setText(rate.getStaffId());
-        holder.serviceScore.setText(rate.getServiceScore());
-        holder.onTimeScore.setText(rate.getOnTimeScore());
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        RateModel rate =  list.get(position);
+        holder.id.setText(rate.getStaffId());
+        holder.onTime.setText(rate.getOnTimeScore());
+        holder.service.setText(rate.getServiceScore());
     }
 
     @Override
@@ -44,13 +45,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-
-        TextView staffId, onTimeScore, serviceScore;
+        TextView id, onTime, service;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            staffId = itemView.findViewById(R.id.staffIdEt);
-            onTimeScore = itemView.findViewById(R.id.onTimeScoreEt);
-            serviceScore = itemView.findViewById(R.id.serviceScoreEt);
+
+            id = itemView.findViewById(R.id.textStaffId);
+            onTime = itemView.findViewById(R.id.textOntime);
+            service = itemView.findViewById(R.id.textOntime);
         }
     }
 }

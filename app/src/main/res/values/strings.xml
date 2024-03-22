@@ -12,4 +12,6 @@
     <string name="back">Back</string>
     <string name="service">Service:</string>
     <string name="on_time">On Time:</string>
+    <string name="analysis_report">Analysis Report</string>
+    <string name="staff_count">Staff Count:</string>
 </resources>

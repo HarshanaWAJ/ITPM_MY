@@ -40,12 +40,13 @@ public class FeedbackList extends AppCompatActivity {
             }
         });
 
-        recyclerView = findViewById(R.id.rateListRv);
+        recyclerView =  findViewById(R.id.recyclerview);
         databaseReference = FirebaseDatabase.getInstance().getReference("Staff_Rates");
         list = new ArrayList<>();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new MyAdapter(this, list);
         recyclerView.setAdapter(adapter);
+
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -56,7 +57,6 @@ public class FeedbackList extends AppCompatActivity {
                 }
                 adapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

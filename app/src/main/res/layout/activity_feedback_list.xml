@@ -7,7 +7,7 @@
     tools:context=".FeedbackList">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rateListRv"
+        android:id="@+id/recyclerview"
         android:layout_width="409dp"
         android:layout_height="623dp"
         android:layout_marginStart="1dp"
